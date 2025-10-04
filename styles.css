@@ -29,3 +29,16 @@
   height: 200px;
   object-fit: cover;
 }
+#sm img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(1);
+  transition: all 0.2s ease;
+}
+#sm img:hover {
+  filter: none;
+  transform: scale(1.08);
+}
+#sm a {
+  text-decoration: none;
+}

@@ -27,7 +27,7 @@
                         <a class="nav-link link-underline-opacity-75-hover link-underline" href="#menu">Menu</a>
                     </li>
                     <li class="nav-item navbar-text">
-                        <a class="nav-link link-underline-opacity-75-hover link-underline" href="#">Pricing</a>
+                        <a class="nav-link link-underline-opacity-75-hover link-underline" href="#reservation">Reservation</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -166,9 +166,9 @@
             </div>
         </div>
     </main>
-    <footer class="container-fluid pt-5 d-flex flex-wrap gap-5 justify-content-center">
+    <footer class="container pt-5 d-flex flex-wrap gap-5 justify-content-center">
         <h2 class="text-center" style="width: 100%;">Reservation Form</h2>
-        <form class="row g-3 border border-2" style="width: 70%;">
+        <form class="row g-3 border border-2" id="reservation" style="width: 85%;">
             <div class="col-md-6">
                 <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="name" minlength="2" maxlength="16" required>
@@ -205,6 +205,25 @@
                 <button type="submit" class="btn btn-danger m-2 btn-lg">Send</button>
             </div>
         </form>
+        <div class="p-5 container border-top border-2 row border-danger">
+            <h3 class="display-6 fw-bold">Reach Out to Us!</h3>
+            <address class="col">
+                <p>📍 123 Main Street, SA</p>
+                <p>📞 +1 783 2387 1398</p>
+                <p>📧 reservations@bellavita.com</p>
+            </address>
+            <div class="col container-fluid border-end rounded-pill border-start text-center p-5" id="sm">
+                <a href="#" class="mx-3">
+                    <img src="assets/facebook.png" alt="our facebook" class="shadow-lg">
+                </a>
+                <a href="#" class="mx-3">
+                    <img src="assets/social.png" alt="our instagram" class="shadow-lg">
+                </a>
+                <a href="#" class="mx-3">
+                    <img src="assets/twitter.png" alt="our X" class="shadow-lg">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
