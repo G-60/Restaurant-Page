@@ -1,0 +1,31 @@
+.shiny-text {
+  color: oklab(57.262% 0.16162 0.07439 / 0.643); /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgb(168, 38, 38) 40%,
+    rgb(255, 99, 99) 50%,
+    rgb(255, 30, 30) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}

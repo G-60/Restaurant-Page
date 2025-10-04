@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/extension_icon.svg">
+    <title>Bella Vita</title>
+</head>
+<body class="bg-dark" data-bs-theme="dark">
+    <header class="text-light" id="home">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top shadow-sm" data-bs-theme="dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand mb-0 h1" href="#">Bella Vita</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link link-underline-opacity-75-hover link-underline" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link link-underline-opacity-75-hover link-underline" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid text-center pb-5 d-grid gap-3 pt-5">
+            <h1 class="p-2 m-5 display-2 shiny-text">Bella Vita</h1>
+            <p class="text-center lead fst-italic fw-lighter">Where Flavor Meets Passion</p>
+            <p class="m-5 border-bottom border-danger border-2 rounded-pill p-3 shadow-sm">Welcome to Bella Vita, your neighborhood escape for authentic Italian cuisine. From hand-tossed pizzas to fresh pasta, every dish is made with love and the finest ingredients.</p>
+            <button type="button" class="btn btn-danger btn-lg mx-auto" style="width: 25%;">Order Now</button>
+        </div>
+    </header>
+    <main>
+        <h2 class="display-5 text-center m-5 text-light fw-bold" id="menu">Menu</h2>
+        <h3 class="text-center text-light my-5">Starters</h3>
+        <div class="d-flex justify-content-center">
+            <div class="row row-cols-1 row-cols-md-2 g-5" style="width: 90%;">
+                <div class="col">
+                    <div class="card bg-danger text-white border-0">
+                    <img src="assets/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.webp" class="card-img-top img-fluid" height="200px" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Bruschetta</h5>
+                            <p class="card-text">Grilled bread with tomato & basil<br><mark><span class="lead fw-bold"><strong>Price: $6</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/Garlic-Knots-Web-13.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Garlic Knots</h5>
+                            <p class="card-text">Freshly baked, with marinara dip<br><mark><span class="lead fw-bold"><strong>Price: $5</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-light text-center p-3" style="width: 100%;">Main Dishes</h3>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/1453815-authentic-pizza-margherita-Cynthia-Ross-4x3-1-7410c69552274163a9049342b60c22ff.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Margherita Pizza</h5>
+                            <p class="card-text">Classic mozzarella & basil<br><mark><span class="lead fw-bold"><strong>Price: $12</strong></span></mark></p>
+                            <buton class="btn btn-light">Order</buton>
+                            <buton class="btn btn-light ms-1">View</buton>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/AR-23431-to-die-for-fettuccine-alfredo-DDMFS-beauty-3x4-b64d36c7ff314cb39774e261c5b18352.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Fettuccine Alfredo</h5>
+                            <p class="card-text">Creamy parmesan sauce<br><mark><span class="lead fw-bold"><strong>Price: $14</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mx-auto">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/classic-chicken-parmesan-scaled.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Chicken Parmigiana</h5>
+                            <p class="card-text">Crispy chicken with tomato sauce<br><mark><span class="lead fw-bold"><strong>Price: $16</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-center p-3" style="width: 100%;">Desserts</h3>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/Tiramisu_4.webp" class="card-img-top" alt="...">
+                        <span class="badge rounded-pill text-bg-warning fw-bold" style="position: absolute; transform: rotate(-40deg); left: -5%">Sold Out</span>
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Tiramisu</h5>
+                            <p class="card-text">Coffee-soaked delight<br><mark><span class="lead fw-bold"><strong>Price: $7</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/Full-Gelato-Lineup_2022_1290px.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Gelato</h5>
+                            <p class="card-text">Two scoops of Italian ice cream<br><mark><span class="lead fw-bold"><strong>Price: $5</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-center p-3" style="width: 100%;">Drinks</h3>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/photo-1623084921164-4a8c5c37a912.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Fresh Lemonade</h5>
+                            <p class="card-text">Refreshing drink to cool you down on a hot day<br><mark><span class="lead fw-bold"><strong>Price: $3</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/Vanilla-Latte-8-copy-735x671.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Vanilla Latte</h5>
+                            <p class="card-text">Vanilla Latte Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br><mark><span class="lead fw-bold"><strong>Price: $5  </strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mx-auto">
+                    <div class="card bg-danger text-light border-0">
+                        <img src="assets/photo-1603569283847-aa295f0d016a.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title display-6">Fruit Juice</h5>
+                            <p class="card-text">A mix of fresh fruits that can cure stress<br><mark><span class="lead fw-bold"><strong>Price: $8</strong></span></mark></p>
+                            <button class="btn btn-light">Order</button>
+                            <button class="btn btn-light ms-1">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid pt-5 d-flex flex-wrap gap-5 justify-content-center">
+        <h2 class="text-center" style="width: 100%;">Reservation Form</h2>
+        <form class="row g-3 border border-2" style="width: 70%;">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" minlength="2" maxlength="16" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" required placeholder="exmaple@gmail.com">
+            </div>
+            <div class="col-12">
+                <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="phone" pattern="[0-9]" minlength="10" maxlength="13" required>
+            </div>
+            <div class="col-12">
+                <label for="date" class="form-label">Date & Time <span class="text-danger">*</span></label>
+                <input type="datetime-local" class="form-control" id="date" required>
+            </div>
+            <div class="col-md-6">
+                <label for="guest" class="form-label">Guests <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="guest" min="2" max="6" required>
+            </div>
+            <div class="col-md-6">
+                <label for="msg">Message</label>
+                <textarea class="form-control" id="msg" placeholder="i want it to be..." style="vertical-align: middle;"></textarea>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">
+                    I agree to Bella Vita's bla bla <span class="text-danger">*</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-danger m-2 btn-lg">Send</button>
+            </div>
+        </form>
+    </footer>
+</body>
+</html>
