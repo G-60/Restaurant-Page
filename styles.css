@@ -1,5 +1,5 @@
 .shiny-text {
-  color: oklab(57.262% 0.16162 0.07439 / 0.643); 
+  color: oklab(57.262% 0.16162 0.07439 / 0.643);
   background: linear-gradient(
     120deg,
     rgb(168, 38, 38) 40%,
@@ -25,6 +25,17 @@
 .shiny-text.disabled {
   animation: none;
 }
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+#sm img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(1);
+  transition: all 0.2s ease;
+}
+#sm img:hover {
   filter: none;
   transform: scale(1.08);
 }
