@@ -1,248 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/extension_icon.svg">
-    <title>Bella Vita</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href=
+	"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel=
+	"stylesheet">
+	<script src=
+	"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+	</script>
+	<meta content=
+	"Demo Italian restaurant website built with Bootstrap for learning and design practice."
+	name="description">
+	<script defer src="script.js">
+	</script>
+	<link href="styles.css" rel="stylesheet">
+	<link href="assets/extension_icon.svg" rel="icon">
+	<title>Bella Vita</title>
 </head>
 <body class="bg-dark" data-bs-theme="dark">
-    <header class="text-light" id="home">
-        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top shadow-sm p-1" data-bs-theme="dark">
-            <div class="container-fluid ">
-                <a class="navbar-brand mb-0 h1" href="#">Bella Vita</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="#reservation">Reservation</a>
-                    </li>
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="#contact-us">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" id="nav-search" aria-label="Search"/>
-                    <button class="btn btn-outline-danger" type="submit">Search</button>
-                </form>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid text-center pb-5 d-grid gap-3 pt-5">
-            <h1 class="p-2 m-5 display-2 shiny-text">Bella Vita</h1>
-            <p class="text-center lead fst-italic fw-lighter">Where Flavor Meets Passion</p>
-            <p class="m-5 border-bottom border-danger border-2 rounded-pill p-3 shadow-sm">Welcome to Bella Vita, your neighborhood escape for authentic Italian cuisine. From hand-tossed pizzas to fresh pasta, every dish is made with love and the finest ingredients.</p>
-            <button type="button" class="btn btn-danger btn-lg mx-auto px-4">Order Now</button>
-        </div>
-    </header>
-    <main>
-        <h2 class="display-5 text-center m-5 text-light fw-bold" id="menu">Menu</h2>
-        <h3 class="text-center text-light my-5">Starters</h3>
-        <div class="d-flex justify-content-center">
-            <div class="row row-cols-1 row-cols-md-2 g-5" style="width: 90%;">
-                <div class="col">
-                    <div class="card bg-danger text-white border-0">
-                    <img src="assets/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.webp" class="card-img-top img-fluid" height="200px" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Bruschetta</h5>
-                            <p class="card-text">Grilled bread with tomato & basil<br><mark><span class="lead fw-bold"><strong>Price: $6</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/Garlic-Knots-Web-13.jpg" class="card-img-top img-fluid" alt="fresh baked garlic knots in a bowl with seasoning on top">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Garlic Knots</h5>
-                            <p class="card-text">Freshly baked, with marinara dip<br><mark><span class="lead fw-bold"><strong>Price: $5</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="text-light text-center p-3" style="width: 100%;">Main Dishes</h3>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/1453815-authentic-pizza-margherita-Cynthia-Ross-4x3-1-7410c69552274163a9049342b60c22ff.jpg" class="card-img-top img-fluid" alt="delightful margherita pizza">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Margherita Pizza</h5>
-                            <p class="card-text">Classic mozzarella & basil<br><mark><span class="lead fw-bold"><strong>Price: $12</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/AR-23431-to-die-for-fettuccine-alfredo-DDMFS-beauty-3x4-b64d36c7ff314cb39774e261c5b18352.webp" class="card-img-top img-fluid" alt="a bowl of fettuccine alfredo with a fork and knife">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Fettuccine Alfredo</h5>
-                            <p class="card-text">Creamy parmesan sauce<br><mark><span class="lead fw-bold"><strong>Price: $14</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mx-auto">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/classic-chicken-parmesan-scaled.jpg" class="card-img-top img-fluid" alt="few pieces of chicken parmigiana">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Chicken Parmigiana</h5>
-                            <p class="card-text">Crispy chicken with tomato sauce<br><mark><span class="lead fw-bold"><strong>Price: $16</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="text-center p-3" style="width: 100%;">Desserts</h3>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/Tiramisu_4.webp" class="card-img-top img-fluid" alt="yummy tiramisu in a plate">
-                        <span class="badge rounded-pill text-bg-warning fw-bold" style="position: absolute; transform: rotate(-40deg); left: -5%">Sold Out</span>
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Tiramisu</h5>
-                            <p class="card-text">Coffee-soaked delight<br><mark><span class="lead fw-bold"><strong>Price: $7</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/Full-Gelato-Lineup_2022_1290px.jpg" class="card-img-top img-fluid" alt="scopes of different gelato ice cream flavors inside bowls">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Gelato</h5>
-                            <p class="card-text">Two scoops of Italian ice cream<br><mark><span class="lead fw-bold"><strong>Price: $5</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="text-center p-3" style="width: 100%;">Drinks</h3>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/photo-1623084921164-4a8c5c37a912.avif" class="card-img-top img-fluid" alt="a cup of fresh lemonade and a half lemon next to it">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Fresh Lemonade</h5>
-                            <p class="card-text">Refreshing drink to cool you down on a hot day<br><mark><span class="lead fw-bold"><strong>Price: $3</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/Vanilla-Latte-8-copy-735x671.jpg" class="card-img-top img-fluid" alt="a cup of vanilla latte with a foam on top">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Vanilla Latte</h5>
-                            <p class="card-text">Vanilla Latte with cool foam hat on top<br><mark><span class="lead fw-bold"><strong>Price: $5  </strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mx-auto">
-                    <div class="card bg-danger text-light border-0">
-                        <img src="assets/photo-1603569283847-aa295f0d016a.avif" class="card-img-top img-fluid" alt="a group of different fruits next to each other">
-                        <div class="card-body">
-                            <h5 class="card-title display-6">Fruit Juice</h5>
-                            <p class="card-text">A mix of fresh fruits that can cure stress<br><mark><span class="lead fw-bold"><strong>Price: $8</strong></span></mark></p>
-                            <button class="btn btn-light">Order</button>
-                            <button class="btn btn-light ms-1">View</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="container pt-5 d-flex flex-wrap gap-5 justify-content-center">
-        <h2 class="text-center" style="width: 100%;" id="reservation">Reservation Form</h2>
-        <form class="row g-3 border border-2 mb-5 p-3" style="width: 50%;">
-            <div class="col-md-6">
-                <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="name" minlength="2" maxlength="26" required>
-            </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="email" required placeholder="exmaple@gmail.com">
-            </div>
-            <div class="col-12">
-                <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="phone" pattern="[0-9]" minlength="10" maxlength="13" required>
-            </div>
-            <div class="col-12">
-                <label for="date" class="form-label">Date & Time <span class="text-danger">*</span></label>
-                <input type="datetime-local" class="form-control" id="date" required>
-            </div>
-            <div class="col-md-6">
-                <label for="guest" class="form-label">Guests <span class="text-danger">*</span></label>
-                <input type="number" class="form-control" id="guest" min="2" max="6" required>
-            </div>
-            <div class="col-md-6">
-                <label for="msg">Message</label>
-                <textarea class="form-control" id="msg" placeholder="i want it to be..." style="vertical-align: middle;"></textarea>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                    I agree to Bella Vita's bla bla <span class="text-danger">*</span>
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-danger m-2 btn-lg">Send</button>
-            </div>
-        </form>
-        <div class="pt-5 container border-top border-2 row border-danger">
-            <h3 class="display-6 fw-bold mb-3" id="contact-us">Reach Out to Us!</h3>
-            <address class="col">
-                <p>📍 123 Main Street, Jordan</p>
-                <p>📞 +1 783 2387 1398</p>
-                <p>📧 reservations@bellavita.com</p>
-                <p>Interested in joining us?
-                <a href="#" class="link-underline-opacity-50 link-underline-danger link-offset-2">Join our team</a>
-                </p>
-            </address>
-                <div class="col border-end rounded-pill border-start mx-5" id="sm">
-                    <div class="d-flex justify-content-evenly align-items-center h-100">
-                        <a href="#" class="m-2">
-                            <img src="assets/facebook.png" alt="our facebook">
-                        </a>
-                        <a href="#" class="m-2">
-                            <img src="assets/social.png" alt="our instagram">
-                        </a>
-                        <a href="#" class="m-2">
-                            <img src="assets/twitter.png" alt="our X">
-                        </a>
-                    </div>
-                </div>
-        </div>
-        <div class="row m-3">
-            <div class="col text-center my-5 p-3 border-top">
-                <a href="https://github.com/G-60" target="_blank">
-                    <img src="assets/github-mark-white.svg" alt="my github" class="img-fluid my-3 mx-5">
-                </a>
-                <a href="https://www.linkedin.com/in/murad-salem-cys" target="_blank">
-                    <img src="assets/InBug-White.png" alt="my linkedin" class="img-fluid my-3 mx-5">
-                </a>
-                <p class="text-muted fw-lighter"><em><strong>Disclaimer:</strong> This website is a demo project created for practice purposes only. Bella Vita is a fictional restaurant. All names, menu items, prices, and contact details are purely for demonstration and do not represent a real business.</em></p>
-            </div>
-        </div>
-    </footer>
+	<header class="text-light" id="home">
+		<nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top shadow-sm p-1"
+		data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand mb-0 h1" href="#">Bella Vita</a>
+				<button aria-controls="navbarNav" aria-expanded="false" aria-label=
+				"Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav"
+				data-bs-toggle="collapse" type="button"><span class=
+				"navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item navbar-text">
+							<a class="nav-link active" href="#home">Home</a>
+						</li>
+						<li class="nav-item navbar-text">
+							<a class="nav-link" href="#menu">Menu</a>
+						</li>
+						<li class="nav-item navbar-text">
+							<a class="nav-link" href="#reservation">Reservation</a>
+						</li>
+						<li class="nav-item navbar-text">
+							<a class="nav-link" href="#contact-us">Contact Us</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input aria-label="Search" class="form-control me-2" id="nav-search"
+						placeholder="Search" type="search"> <button class=
+						"btn btn-outline-danger" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid text-center pb-5 d-grid gap-3 pt-5">
+			<h1 class="p-2 m-5 display-2 shiny-text">Bella Vita</h1>
+			<p class="text-center lead fst-italic fw-lighter">Where Flavor Meets
+			Passion</p>
+			<p class=
+			"m-5 border-bottom border-danger border-2 rounded-pill p-3 shadow-sm">
+			Welcome to Bella Vita, your neighborhood escape for authentic Italian
+			cuisine. From hand-tossed pizzas to fresh pasta, every dish is made with
+			love and the finest ingredients.</p><button class=
+			"btn btn-danger btn-lg mx-auto px-4" type="button">Order Now</button>
+		</div>
+	</header>
+	<main>
+		<h2 class="display-5 text-center m-5 text-light fw-bold" id="menu">Menu</h2>
+		<h3 class="text-center text-light my-5">Starters</h3>
+		<div class="d-flex justify-content-center">
+			<div class="row row-cols-1 row-cols-md-2 g-5" style="width: 90%;">
+				<div class="col">
+					<div class="card bg-danger text-white border-0">
+						<img alt="bruschettas on a table" class="card-img-top img-fluid" src=
+						"assets/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.webp">
+						<div class="card-body">
+							<h5 class="card-title display-6">Bruschetta</h5>
+							<p class="card-text">Grilled bread with tomato & basil<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$6</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="fresh baked garlic knots in a bowl with seasoning on top"
+						class="card-img-top img-fluid" src="assets/Garlic-Knots-Web-13.jpg">
+						<div class="card-body">
+							<h5 class="card-title display-6">Garlic Knots</h5>
+							<p class="card-text">Freshly baked, with marinara dip<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$5</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<h3 class="text-light text-center p-3" style="width: 100%;">Main
+				Dishes</h3>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="delightful margherita pizza" class="card-img-top img-fluid"
+						src="assets/1453815-authentic-pizza-margherita-Cynthia-Ross-4x3-1-7410c69552274163a9049342b60c22ff.jpg">
+						<div class="card-body">
+							<h5 class="card-title display-6">Margherita Pizza</h5>
+							<p class="card-text">Classic mozzarella & basil<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$12</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="a bowl of fettuccine alfredo with a fork and knife" class=
+						"card-img-top img-fluid" src=
+						"assets/AR-23431-to-die-for-fettuccine-alfredo-DDMFS-beauty-3x4-b64d36c7ff314cb39774e261c5b18352.webp">
+						<div class="card-body">
+							<h5 class="card-title display-6">Fettuccine Alfredo</h5>
+							<p class="card-text">Creamy parmesan sauce<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$14</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col mx-auto">
+					<div class="card bg-danger text-light border-0">
+						<img alt="few pieces of chicken parmigiana" class=
+						"card-img-top img-fluid" src=
+						"assets/classic-chicken-parmesan-scaled.jpg">
+						<div class="card-body">
+							<h5 class="card-title display-6">Chicken Parmigiana</h5>
+							<p class="card-text">Crispy chicken with tomato sauce<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$16</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<h3 class="text-center p-3" style="width: 100%;">Desserts</h3>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="yummy tiramisu in a plate" class="card-img-top img-fluid" src=
+						"assets/Tiramisu_4.webp"> <span class=
+						"badge rounded-pill text-bg-warning fw-bold" style=
+						"position: absolute; transform: rotate(-40deg); left: -5%">Sold
+						Out</span>
+						<div class="card-body">
+							<h5 class="card-title display-6">Tiramisu</h5>
+							<p class="card-text">Coffee-soaked delight<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$7</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="scopes of different gelato ice cream flavors inside bowls"
+						class="card-img-top img-fluid" src=
+						"assets/Full-Gelato-Lineup_2022_1290px.jpg">
+						<div class="card-body">
+							<h5 class="card-title display-6">Gelato</h5>
+							<p class="card-text">Two scoops of Italian ice cream<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$5</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<h3 class="text-center p-3" style="width: 100%;">Drinks</h3>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="a cup of fresh lemonade and a half lemon next to it" class=
+						"card-img-top img-fluid" src=
+						"assets/photo-1623084921164-4a8c5c37a912.avif">
+						<div class="card-body">
+							<h5 class="card-title display-6">Fresh Lemonade</h5>
+							<p class="card-text">Refreshing drink to cool you down on a hot day<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$3</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-danger text-light border-0">
+						<img alt="a cup of vanilla latte with a foam on top" class=
+						"card-img-top img-fluid" src="assets/Vanilla-Latte-8-copy-735x671.jpg">
+						<div class="card-body">
+							<h5 class="card-title display-6">Vanilla Latte</h5>
+							<p class="card-text">Vanilla Latte with cool foam hat on top<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$5</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col mx-auto">
+					<div class="card bg-danger text-light border-0">
+						<img alt="a group of different fruits next to each other" class=
+						"card-img-top img-fluid" src=
+						"assets/photo-1603569283847-aa295f0d016a.avif">
+						<div class="card-body">
+							<h5 class="card-title display-6">Fruit Juice</h5>
+							<p class="card-text">A mix of fresh fruits that can cure stress<br>
+							<mark><span class="lead fw-bold"><strong>Price:
+							$8</strong></span></mark></p><button class=
+							"btn btn-light">Order</button> <button class=
+							"btn btn-light ms-1">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="container pt-5 d-flex flex-wrap gap-5 justify-content-center">
+		<h2 class="text-center" id="reservation" style="width: 100%;">Reservation
+		Form</h2>
+		<form class="row g-3 border border-2 mb-5 p-3" style="width: 50%;">
+			<div class="col-md-6">
+				<label class="form-label" for="name">Name <span class=
+				"text-danger">*</span></label> <input class="form-control" id="name"
+				maxlength="26" required="" type="text">
+			</div>
+			<div class="col-md-6">
+				<label class="form-label" for="email">Email <span class=
+				"text-danger">*</span></label> <input class="form-control" id="email"
+				placeholder="exmaple@gmail.com" required="" type="email">
+			</div>
+			<div class="col-12">
+				<label class="form-label" for="phone">Phone <span class=
+				"text-danger">*</span></label> <input class="form-control" id="phone"
+				maxlength="13" pattern="[0-9]" required="" type="text">
+			</div>
+			<div class="col-12">
+				<label class="form-label" for="date">Date & Time <span class=
+				"text-danger">*</span></label> <input class="form-control" id="date"
+				required="" type="datetime-local">
+			</div>
+			<div class="col-md-6">
+				<label class="form-label" for="guest">Guests <span class=
+				"text-danger">*</span></label> <input class="form-control" id="guest" max=
+				"6" min="2" required="" type="number">
+			</div>
+			<div class="col-md-6">
+				<label for="msg">Message</label> 
+				<textarea class="form-control" id="msg" placeholder="i want it to be..."
+				style="vertical-align: middle;"></textarea>
+			</div>
+			<div class="col-12">
+				<div class="form-check">
+					<input class="form-check-input" id="gridCheck" required="" type=
+					"checkbox"> <label class="form-check-label" for="gridCheck">I agree to
+					Bella Vita's bla bla <span class="text-danger">*</span></label>
+				</div>
+			</div>
+			<div class="col-12">
+				<button class="btn btn-danger m-2 btn-lg" type="submit">Send</button>
+			</div>
+		</form>
+		<div class="pt-5 container border-top border-2 row border-danger">
+			<h3 class="display-6 fw-bold mb-3" id="contact-us">Reach Out to Us!</h3>
+			<address class="col">
+				<p>📍 123 Main Street, Jordan</p>
+				<p>📞 +1 783 2387 1398</p>
+				<p>📧 reservations@bellavita.com</p>
+				<p>Interested in joining us? <a class=
+				"link-underline-opacity-50 link-underline-danger link-offset-2" href=
+				"#">Join our team</a></p>
+			</address>
+			<div class="col border-end rounded-pill border-start mx-5" id="sm">
+				<div class="d-flex justify-content-evenly align-items-center h-100">
+					<a class="m-2" href="#"><img alt="our facebook" src=
+					"assets/facebook.png"></a> <a class="m-2" href="#"><img alt=
+					"our instagram" src="assets/social.png"></a> <a class="m-2" href=
+					"#"><img alt="our X" src="assets/twitter.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="row m-3">
+			<div class="col text-center my-5 p-3 border-top">
+				<a href="https://github.com/G-60" rel="noopener noreferrer" target=
+				"_blank"><img alt="my github" class="img-fluid my-3 mx-5" src=
+				"assets/github-mark-white.svg"></a> <a href=
+				"https://www.linkedin.com/in/murad-salem-cys" rel="noopener noreferrer"
+				target="_blank"><img alt="my linkedin" class="img-fluid my-3 mx-5" src=
+				"assets/InBug-White.png"></a>
+				<p class="text-muted fw-lighter"><em><strong>Disclaimer:</strong> This
+				website is a demo project created for practice purposes only. Bella Vita is
+				a fictional restaurant. All names, menu items, prices, and contact details
+				are purely for demonstration and do not represent a real business.</em></p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
