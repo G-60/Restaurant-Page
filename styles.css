@@ -4,7 +4,7 @@
     120deg,
     rgb(168, 38, 38) 40%,
     rgb(255, 99, 99) 50%,
-    rgb(255, 30, 30) 60%
+    rgb(182, 18, 18) 60%
   );
   background-size: 200% 100%;
   -webkit-background-clip: text;
@@ -29,9 +29,15 @@
   height: 200px;
   object-fit: cover;
 }
+.card {
+  transition: all 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
 #sm img {
-  width: 30px;
-  height: 30px;
+  width: 3em;
+  height: 3em;
   filter: grayscale(1);
   transition: all 0.2s ease;
 }
@@ -41,4 +47,14 @@
 }
 #sm a {
   text-decoration: none;
+}
+footer div:last-child a {
+  text-decoration: none;
+}
+footer div:last-child img {
+  width: 2em;
+  transition: all 0.5s ease-in-out;
+}
+footer div:last-child img:hover {
+  transform: scale(1.2) rotate(1turn);
 }
